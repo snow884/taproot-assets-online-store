@@ -1,0 +1,3 @@
+tiramisu_wallet_client==0.0.4
+Flask==2.1.0
+gunicorn==21.2.0

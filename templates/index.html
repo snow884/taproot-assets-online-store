@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥕🏪 Online shop for Taproot Assets Protocol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            word-wrap: break-word;   
+            overflow-wrap: break-word;
+        }
+        .product img {
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🥕🏪 Online shop for Taproot Assets Protocol</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <h2>About</h2>
+            <p>
+                This is an online test store intended for testing of <a href="https://docs.lightning.engineering/the-lightning-network/taproot-assets">Taproot Assets Protocol (TAP)</a>
+                on Bitcoin Testnet blockchain and for testing of <a href="https://testnet.tarowallet.net/">Tiramisu wallet</a> for TAP. 
+                Clicking on the pruchase button below will result in an invoice being provided to you. 
+                After paying the invoice you will be redirected to a success page.
+            </p>
+            <p>
+                The online store only supports payments in <a href="https://testnet.tarowallet.net/walletapp/currencies_public/{{ asset_id }}">WaifuCoin (WAIF)</a>. You can obtain this coin 
+                from <a href="https://testnet.tarowallet.net/walletapp/faucet/?currency={{ asset_id }}">WAIF faucet</a>. This is a testnet coin so it is free.
+            </p>
+            <p>
+                Note that this online store is for testing only and purchases 
+                in this store will not result in any goods or services being provided to you.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <h2>A friendly puppy for sale</h2>
+            <img src="/static/happy_puppy.png" alt="Product Image">
+            <p>Description: A friendly dog available for purchase with Taproot assets</p>
+            <p>Price: 30 <a href="https://testnet.tarowallet.net/walletapp/currencies_public/{{ asset_id }}">{{ asset_acronym }}</a> </p>
+            
+            <a href="{{ url_for('checkout') }}" class="btn btn-primary"><button>Purchase</button></a>
+        </div>
+    </div>
+</body>
+</html>
