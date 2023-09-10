@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 app.secret_key = 'TestSecretKey123456'
 
-USERNAME = 'test_api_2'
-PASSWORD = 'MyTestPwd123'
+USERNAME = 'USERNAME_HERE'
+PASSWORD = 'PASSWORD_HERE'
 ASSET_ID = 3
 PRICE = 30
 
