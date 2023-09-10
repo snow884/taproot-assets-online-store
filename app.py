@@ -5,10 +5,10 @@ from tiramisu_wallet_client import TiramisuClient
 
 app = Flask(__name__)
 
-app.secret_key = 'SECRET_KEY_HERE'
+app.secret_key = 'TestSecretKey123456'
 
-USERNAME = 'USERNAME_HERE'
-PASSWORD = 'PASSWORD_HERE'
+USERNAME = 'test_api_2'
+PASSWORD = 'MyTestPwd123'
 ASSET_ID = 3
 PRICE = 30
 
